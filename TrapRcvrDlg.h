@@ -1,18 +1,3 @@
-//  Copyright (c) 2013 trapreceiver.com
-//  All rights reserved.
-// 
-//  Redistribution and use of executable software is never 
-//  permitted without the express written permission of 
-//  trapreceiver.com
-// 
-//  Distribution of the source is never permitted without 
-//  the express written permission of 
-//  trapreceiver.com
-// 
-//  THIS SOFTWARE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR
-//  IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
-//  WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
-//
 
 #if !defined(AFX_TRAPRCVRDLG_H__60C32D65_2D6F_11D3_ABB9_00C04F6BC4E1__INCLUDED_)
 #define AFX_TRAPRCVRDLG_H__60C32D65_2D6F_11D3_ABB9_00C04F6BC4E1__INCLUDED_

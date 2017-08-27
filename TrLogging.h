@@ -1,17 +1,3 @@
-//  Copyright (c) 1997 Network Computing Technologies, Inc.
-//  All rights reserved.
-// 
-//  Redistribution and use of executable software is never 
-//  permitted without the express written permission of 
-//  Network Computing Technologies, Inc.
-// 
-//  Distribution of the source is never permitted without 
-//  the express written permission of 
-//  Network Computing Technologies, Inc.
-// 
-//  THIS SOFTWARE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR
-//  IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
-//  WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 #if !defined(AFX_TRLOGGING_H__6F404552_A6E1_11D1_81D2_006097C511C2__INCLUDED_)
 #define AFX_TRLOGGING_H__6F404552_A6E1_11D1_81D2_006097C511C2__INCLUDED_

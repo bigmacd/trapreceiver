@@ -1,18 +1,3 @@
-//  Copyright (c) 2013 TrapReceiver.com
-//  All rights reserved.
-// 
-//  Redistribution and use of executable software is never 
-//  permitted without the express written permission of 
-//  Network Computing Technologies, Inc.
-// 
-//  Distribution of the source is never permitted without 
-//  the express written permission of 
-//  Network Computing Technologies, Inc.
-// 
-//  THIS SOFTWARE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR
-//  IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
-//  WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
-
 
 #ifndef __REGISTRYV2_H__
 #include "RegistryV2.h"
