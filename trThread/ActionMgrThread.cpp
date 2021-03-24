@@ -17,7 +17,7 @@
 #include "ActionMgrThread.h"
 #endif
 
-#include "..\Registry.h"
+//#include "..\Registry.h"
 #include "vbs.h"
 #include "..\eventlogmessage.h"
 

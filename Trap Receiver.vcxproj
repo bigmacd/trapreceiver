@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{BED9ED37-AAEB-4661-8E68-D9F1578447C5}</ProjectGuid>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>Static</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0a00;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\um;C:\Users\marti\git\trapreceiver;C:\Users\marti\git\trapreceiver\trThread;C:\Users\marti\git\sqlite3;C:\Users\marti\git\mibparse\mibdb;C:\Users\marti\git\mibparse;C:\Users\marti\git\mibparse\mibparse;C:\Users\marti\git\pktlib;C:\Users\marti\git\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>afxwin.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>C:\Users\marti\git\sqlite3\Release;C:\Users\marti\git\mibparse\mibdb\Libs;C:\Users\marti\git\pktlib\nt\Libs;C:\Users\marti\git\mibparse\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pktlibmfc.lib;mibparse-mfc.lib;mibdb-mfc.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\um;C:\Users\marti\git\trapreceiver;C:\Users\marti\git\trapreceiver\trThread;C:\Users\marti\git\sqlite3;C:\Users\marti\git\mibparse\mibdb;C:\Users\marti\git\mibparse\mibparse;C:\Users\marti\git\pktlib;C:\Users\marti\git\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\marti\git\pktlib\nt\Libs;C:\Users\marti\git\mibparse\Libs;C:\Users\marti\git\mibparse\mibdb\Libs;C:\Users\marti\git\sqlite3\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>nafxcw.lib;PktLibMFC.lib;mibdb-mfc.lib;mibparse-mfc.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\Base64.cpp" />
+    <ClCompile Include="..\common\ClientSocket.cpp" />
+    <ClCompile Include="..\common\QueueServer.cpp" />
+    <ClCompile Include="..\common\Smtp.cpp" />
+    <ClCompile Include="AMTQueueClient.cpp" />
+    <ClCompile Include="ApplicationLogging.cpp" />
+    <ClCompile Include="CmdLineDlg.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="ConfigureSound.cpp" />
+    <ClCompile Include="ConfigureTrapData.cpp" />
+    <ClCompile Include="DetailDlg.cpp" />
+    <ClCompile Include="DlgResizeHelper.cpp" />
+    <ClCompile Include="EmailRecipients.cpp" />
+    <ClCompile Include="EnvVarsDlg.cpp" />
+    <ClCompile Include="eventlogmessage.cpp" />
+    <ClCompile Include="ExecuteAdd.cpp" />
+    <ClCompile Include="ExploderDestinations.cpp" />
+    <ClCompile Include="LogQueueClient.cpp" />
+    <ClCompile Include="MibFileBrowse.cpp" />
+    <ClCompile Include="MibImportPropertyPage.cpp" />
+    <ClCompile Include="MibLoadStatus.cpp" />
+    <ClCompile Include="MibUnloadStatus.cpp" />
+    <ClCompile Include="RawTrapData.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="SmtpAuthDlg.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="ToolTipListCtrl.cpp" />
+    <ClCompile Include="TrActionAdd.cpp" />
+    <ClCompile Include="TrActions.cpp" />
+    <ClCompile Include="TrAlert.cpp" />
+    <ClCompile Include="TrapRcvr.cpp" />
+    <ClCompile Include="TrapRcvrDlg.cpp" />
+    <ClCompile Include="TrapRcvrException.cpp" />
+    <ClCompile Include="TrAttention.cpp" />
+    <ClCompile Include="Traynot.cpp" />
+    <ClCompile Include="TrDb.cpp" />
+    <ClCompile Include="TrEmail.cpp" />
+    <ClCompile Include="TrEmailAdd.cpp" />
+    <ClCompile Include="TrExploder.cpp" />
+    <ClCompile Include="TrExploderAdd.cpp" />
+    <ClCompile Include="TrLogging.cpp" />
+    <ClCompile Include="TrMisc.cpp" />
+    <ClCompile Include="TrMonitor.cpp" />
+    <ClCompile Include="trThread\ActionMgrThread.cpp" />
+    <ClCompile Include="trThread\ActionThread.cpp" />
+    <ClCompile Include="trThread\TrapMatcher.cpp" />
+    <ClCompile Include="trThread\trDeDup.cpp" />
+    <ClCompile Include="V2DetailDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AMTQueueClient.h" />
+    <ClInclude Include="ApplicationLogging.h" />
+    <ClInclude Include="blahTrapRcvrDlg.h" />
+    <ClInclude Include="CmdLineDlg.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="ConfigureSound.h" />
+    <ClInclude Include="ConfigureTrapData.h" />
+    <ClInclude Include="DetailDlg.h" />
+    <ClInclude Include="DlgResizeHelper.h" />
+    <ClInclude Include="EmailRecipients.h" />
+    <ClInclude Include="EnvVarsDlg.h" />
+    <ClInclude Include="eventlogmessage.h" />
+    <ClInclude Include="ExecuteAdd.h" />
+    <ClInclude Include="ExploderDestinations.h" />
+    <ClInclude Include="LogQueueClient.h" />
+    <ClInclude Include="MibFileBrowse.h" />
+    <ClInclude Include="MibImportPropertyPage.h" />
+    <ClInclude Include="MibLoadStatus.h" />
+    <ClInclude Include="MibUnloadStatus.h" />
+    <ClInclude Include="RawTrapData.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SmtpAuthDlg.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="ToolTipListCtrl.h" />
+    <ClInclude Include="TrActionAdd.h" />
+    <ClInclude Include="TrActions.h" />
+    <ClInclude Include="TrAlert.h" />
+    <ClInclude Include="TrapRcvr.h" />
+    <ClInclude Include="TrapRcvrDlg.h" />
+    <ClInclude Include="TrapRcvrException.h" />
+    <ClInclude Include="TrAttention.h" />
+    <ClInclude Include="TrayNot.h" />
+    <ClInclude Include="TrDb.h" />
+    <ClInclude Include="TrEmail.h" />
+    <ClInclude Include="TrEmailAdd.h" />
+    <ClInclude Include="TrExploder.h" />
+    <ClInclude Include="TrExploderAdd.h" />
+    <ClInclude Include="TrLogging.h" />
+    <ClInclude Include="TrMisc.h" />
+    <ClInclude Include="TrMonitor.h" />
+    <ClInclude Include="trthread\ActionMgrThread.h" />
+    <ClInclude Include="trthread\ActionThread.h" />
+    <ClInclude Include="trthread\FilterQueue.h" />
+    <ClInclude Include="trthread\flusherthread.h" />
+    <ClInclude Include="trthread\oldsmtp.h" />
+    <ClInclude Include="trthread\Smtp.h" />
+    <ClInclude Include="trthread\TrapFilter.h" />
+    <ClInclude Include="trthread\TrapMatcher.h" />
+    <ClInclude Include="trthread\TrapRcvrMsgs.h" />
+    <ClInclude Include="trthread\TrapReceiverService.h" />
+    <ClInclude Include="trthread\trDeDup.h" />
+    <ClInclude Include="trthread\TrQueueClient.h" />
+    <ClInclude Include="trthread\TrThread.h" />
+    <ClInclude Include="V2DetailDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TrapRcvr.rc" />
+    <ResourceCompile Include="trthread\TrapRcvrMsgs.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\TrapRcvr.rc2" />
+    <None Include="trthread\MSG00001.bin" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

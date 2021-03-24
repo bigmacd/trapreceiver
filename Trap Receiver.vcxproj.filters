@@ -2,25 +2,19 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{edd860f9-98b6-41c1-8589-9b017f212936}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{8f0924a4-fca1-4704-9e11-0266de3d528b}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
     <Filter Include="Resource Files">
-      <UniqueIdentifier>{582db19e-9825-491f-8d33-c0db2bf61851}</UniqueIdentifier>
-      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="trThread\ActionMgrThread.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="trThread\ActionThread.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="AMTQueueClient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -28,6 +22,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CmdLineDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ConfigureSound.cpp">
@@ -75,12 +72,6 @@
     <ClCompile Include="RawTrapData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Registry.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="trThread\Smtp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SmtpAuthDlg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -99,9 +90,6 @@
     <ClCompile Include="TrAlert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="trThread\TrapMatcher.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="TrapRcvr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -118,9 +106,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TrDb.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="trThread\trDeDup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TrEmail.cpp">
@@ -147,23 +132,48 @@
     <ClCompile Include="V2DetailDlg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\git\common\QueueServer.cpp">
+    <ClCompile Include="Registry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\git\common\Base64.cpp">
+    <ClCompile Include="trThread\ActionMgrThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trThread\ActionThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trThread\TrapMatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trThread\trDeDup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\QueueServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\Base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\Smtp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ClientSocket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="TrapRcvr.rc">
-      <Filter>Source Files</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="AMTQueueClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="ApplicationLogging.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="blahTrapRcvrDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="CmdLineDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ConfigureSound.h">
@@ -172,13 +182,28 @@
     <ClInclude Include="ConfigureTrapData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DetailDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgResizeHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="EmailRecipients.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="EnvVarsDlg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="eventlogmessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExecuteAdd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="ExploderDestinations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogQueueClient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MibFileBrowse.h">
@@ -196,7 +221,7 @@
     <ClInclude Include="RawTrapData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Resource.h">
+    <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SmtpAuthDlg.h">
@@ -205,7 +230,16 @@
     <ClInclude Include="StdAfx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ToolTipListCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrActionAdd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="TrActions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrAlert.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TrapRcvr.h">
@@ -214,23 +248,95 @@
     <ClInclude Include="TrapRcvrDlg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TrapRcvrException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="TrAttention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrayNot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrDb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrEmail.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrEmailAdd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrExploder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrExploderAdd.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TrLogging.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TrMisc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrMonitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="V2DetailDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trthread\ActionMgrThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trthread\ActionThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trthread\FilterQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trthread\flusherthread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trthread\oldsmtp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trthread\Smtp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trthread\TrapFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trthread\TrapMatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trthread\TrapRcvrMsgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trthread\TrapReceiverService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trthread\trDeDup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trthread\TrQueueClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trthread\TrThread.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\TrapRcvr.ico">
+    <ResourceCompile Include="TrapRcvr.rc">
       <Filter>Resource Files</Filter>
-    </Image>
+    </ResourceCompile>
+    <ResourceCompile Include="trthread\TrapRcvrMsgs.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\TrapRcvr.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="trthread\MSG00001.bin">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

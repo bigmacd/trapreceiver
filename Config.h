@@ -2,8 +2,9 @@
 #define __CONFIG_H__
 
 #include <afxwin.h>
-#include <fstream.h>
-
+#include <iostream>
+#include <fstream>
+using namespace std;
 
 class Config
 {
@@ -12,7 +13,7 @@ class Config
     
     BOOL         mGotConfig;
 
-    ifstream     mConfigFile;
+    std::ifstream     mConfigFile;
     char         mLineBuffer[4096];
     char*        mLineBuf;
     

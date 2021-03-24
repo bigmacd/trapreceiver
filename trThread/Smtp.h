@@ -4,6 +4,7 @@
 #include "Thread.h"
 #include "Packet.h"
 #include "Mibdb.h"
+#include "atlstr.h"
 
 class Smtp : public Thread
 {

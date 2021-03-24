@@ -57,7 +57,6 @@ Registry::~Registry()
 //      *last = 0;
 //    cwd(as);
 
-}
 
 void
 Registry::ReOpen(char* which, BOOL add)

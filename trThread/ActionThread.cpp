@@ -225,8 +225,8 @@ ActionThread::main()
 		    {
 		      if (doLogging == TRUE)
 			ofile << "starting the smtp mail thread" << endl;
-		      mSmtp = new Smtp(mPacket, emailIds, mTimestamp);
-		      mSmtp->Start();
+		      //mSmtp = new Smtp(mPacket, emailIds, mTimestamp);
+		      //mSmtp->Start();
 		      emailStarted = TRUE;
 		    }
 		  }
@@ -777,7 +777,7 @@ ActionThread::main()
 		      if (doLogging == TRUE)
 			ofile << "including trap data as command line arguments" << endl;
 		      char specific[32];
-		      char generic[32];
+		      char genericx[32];
 
 		      if (r.includeCmdIpAddress())
 		      {
@@ -941,10 +941,10 @@ ActionThread::main()
 			    args += envParmName;
 			    args += ' ';
 			  }
-			  sprintf_s(generic, 32,  
+			  sprintf_s(genericx, 32,  
 				    "%d",
 				    mPacket->GenericTrapType());
-			  args += generic;
+			  args += genericx;
 			}
 			if (r.includeCmdSpecificType())
 			{

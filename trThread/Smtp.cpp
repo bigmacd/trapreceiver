@@ -298,7 +298,7 @@ Smtp::ExpandKeywords(CString message)
     // check to see if a predefined
     // argument was used
     char specific[32];
-    char generic[32];
+    char genericx[32];
     if (!strncmp(str, "%SENDERIP%", 10))
     {
       len -= 10; end += 10;
@@ -398,10 +398,10 @@ Smtp::ExpandKeywords(CString message)
 	  if (!strncmp(str, "%GENERICTYPE%", 13))
 	  {
 	    len -= 13; end += 13;
-	    sprintf_s(generic, 32,
+	    sprintf_s(genericx, 32,
 		    "%d",
 		    mPacket->GenericTrapType());
-	    realMessage += generic;
+	    realMessage += genericx;
 	  }
 	  else
 	    if (!strncmp(str, "%SPECIFICTYPE%", 14))

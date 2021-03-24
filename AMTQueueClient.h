@@ -16,8 +16,8 @@
 #ifndef __AMTQUEUECLIENT_H__
 #define __AMTQUEUECLIENT_H__
 
-//#include <windows.h>
-#include <afxwin.h>
+#include <windows.h>
+//#include <afxwin.h>
 
 class AMTQueueClient
 {

@@ -64,7 +64,7 @@ RawTrapData::OnInitDialog()
 	lineMsg.Empty();
 	// printf("\r\n");
       }
-      sprintf_s(line, "%02x ", c[x], 127);
+      sprintf_s(line, "%02x ", c[x]);
       lineMsg += line;
       //    printf("%02x ", c[x]);	
     }

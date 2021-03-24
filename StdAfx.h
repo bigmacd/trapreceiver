@@ -1,30 +1,33 @@
-// stdafx.h : include file for standard system include files,
-//  or project specific include files that are used frequently, but
-//      are changed infrequently
-//
-#ifndef WINVER
-#define WINVER 0x0502
-#endif
+#define _WIN32_WINNT 0x0A00
+#define _ATL_APARTMENT_THREADED
+#define _USING_V110_SDK71_
+#define _ATL_XP_TARGETING
 
-#if !defined(AFX_STDAFX_H__60C32D67_2D6F_11D3_ABB9_00C04F6BC4E1__INCLUDED_)
-#define AFX_STDAFX_H__60C32D67_2D6F_11D3_ABB9_00C04F6BC4E1__INCLUDED_
+#define VC_EXTRALEAN // Exclude rarely-used stuff from Windows headers
 
-#if _MSC_VER >= 1000
-#pragma once
-#endif // _MSC_VER >= 1000
+#include <afxwin.h> // MFC core and standard components
+#include <afxext.h> // MFC extensions
 
-#define VC_EXTRALEAN		// Exclude rarely-used stuff from Windows headers
-#include <afxwin.h>         // MFC core and standard components
-#include <afxext.h>         // MFC extensions
+#ifndef _AFX_NO_OLE_SUPPORT
+#include <afxole.h> // MFC OLE classes
+#include <afxodlgs.h> // MFC OLE dialog classes
+#include <afxdisp.h> // MFC Automation classes
+#endif // _AFX_NO_OLE_SUPPORT
+
+#ifndef _AFX_NO_DB_SUPPORT
+#include <afxdb.h> // MFC ODBC database classes
+#endif // _AFX_NO_DB_SUPPORT
+
+#ifndef _AFX_NO_DAO_SUPPORT
+#include <afxdao.h> // MFC DAO database classes
+#endif // _AFX_NO_DAO_SUPPORT
+
+#include <afxdtctl.h> // MFC support for Internet Explorer 4 Common Controls
 #ifndef _AFX_NO_AFXCMN_SUPPORT
-#include <afxcmn.h>			// MFC support for Windows Common Controls
+#include <afxcmn.h> // MFC support for Windows Common Controls
 #endif // _AFX_NO_AFXCMN_SUPPORT
-
-//#include <afxsock.h>		// MFC socket extensions
-
-//{{AFX_INSERT_LOCATION}}
-// Microsoft Developer Studio will insert additional declarations immediately before the previous line.
 
 #define WM_TRAY_NOTIFY WM_APP+1111
 
-#endif // !defined(AFX_STDAFX_H__60C32D67_2D6F_11D3_ABB9_00C04F6BC4E1__INCLUDED_)
+#include <windows.h>
+

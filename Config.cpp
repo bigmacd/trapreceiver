@@ -3,13 +3,15 @@
 #endif
 
 #ifdef _WIN32
-#include <istream.h>
+#include <sstream>
 #endif
+
+using namespace std;
 
 Config::Config()
        :mGotConfig(FALSE)
 {
-  mConfigFile.open("traprcvr.dat", ios::in | ios::nocreate);
+  mConfigFile.open("traprcvr.dat", ios::in);
   if (mConfigFile.good())
     mGotConfig = TRUE;
   //  int x = mutex_init(&mLock, USYNC_THREAD, NULL);
