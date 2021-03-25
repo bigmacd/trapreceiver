@@ -57,16 +57,16 @@
     <ClCompile Include="TrThread.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\git\common\Base64.cpp">
+    <ClCompile Include="..\..\common\QueueServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\git\common\NTService.cpp">
+    <ClCompile Include="..\..\common\TrapRcvrThread.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\git\common\QueueServer.cpp">
+    <ClCompile Include="..\..\common\NTService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\git\common\TrapRcvrThread.cpp">
+    <ClCompile Include="..\..\common\Base64.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

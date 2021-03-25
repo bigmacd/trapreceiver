@@ -17,13 +17,13 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -60,8 +60,8 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>..\..\git\pktlib;..\..\git\common;..;..\..\git\mibParse\mibdb;..\..\git\sqlitesrc;..\smtpLibrary\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WINVER=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.19041.0\um;C:\Users\marti\git\pktlib;C:\Users\marti\git\common;..;C:\Users\marti\git\mibparse\mibdb;C:\Users\marti\git\sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_WIN32_WINNT=0x0a00;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -79,7 +79,7 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>crypt32.lib;rpcrt4.lib;wininet.lib;dnsapi.lib;wsock32.lib;../../git/pktlib/nt/libs/pktlib.lib;odbc32.lib;odbccp32.lib;winmm.lib;..\..\git\mibparse\mibdb\libs\mibdb.lib;..\..\git\sqlite3\release\sqlite3.lib;..\smtpLibrary\lib\CkBaseRelMt.lib;..\smtpLibrary\lib\ChilkatRelMt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>PktLib.lib;mibdb.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\Release/trThread.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <IgnoreSpecificDefaultLibraries>libc.lib;libcp.lib; libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -87,6 +87,7 @@
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>C:\Users\marti\git\sqlite3\Release;C:\Users\marti\git\mibparse\mibdb\Libs;C:\Users\marti\git\pktlib\nt\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -134,10 +135,10 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\git\common\Base64.cpp" />
-    <ClCompile Include="..\..\git\common\NTService.cpp" />
-    <ClCompile Include="..\..\git\common\QueueServer.cpp" />
-    <ClCompile Include="..\..\git\common\TrapRcvrThread.cpp" />
+    <ClCompile Include="..\..\common\Base64.cpp" />
+    <ClCompile Include="..\..\common\NTService.cpp" />
+    <ClCompile Include="..\..\common\QueueServer.cpp" />
+    <ClCompile Include="..\..\common\TrapRcvrThread.cpp" />
     <ClCompile Include="ActionMgrThread.cpp" />
     <ClCompile Include="ActionThread.cpp" />
     <ClCompile Include="..\eventlogmessage.cpp" />
